@@ -1,0 +1,20 @@
+<svg class="canvas-component" [style.cursor]="cursor">
+  <path
+    *ngFor="let element of elements"
+    [attr.d]="element.d"
+    [attr.stroke]="element.color"
+    [attr.stroke-width]="element.width"
+    stroke-linecape="round"
+    stroke-linejoin="round"
+    fill="none"
+  ></path>
+  <path
+    *ngIf="currentElement"
+    [attr.d]="currentElement.d"
+    [attr.stroke]="currentElement.color"
+    [attr.stroke-width]="currentElement.width"
+    stroke-linecape="round"
+    stroke-linejoin="round"
+    fill="none"
+  ></path>
+</svg>

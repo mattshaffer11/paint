@@ -1,0 +1,18 @@
+.toolbar-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+}

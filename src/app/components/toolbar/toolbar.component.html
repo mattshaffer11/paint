@@ -1,0 +1,22 @@
+<mat-toolbar class="toolbar-component">
+  <div class="left">
+    <button *ngFor="let color of colors" mat-icon-button aria-label="color icon" (click)="changeColor(color)">
+      <app-color-icon [active]="color === activeColor" [color]="color"></app-color-icon>
+    </button>
+    <app-size-slider
+      (change)="changeStrokeWidth($event)"
+      [value]="strokeWidth">
+    </app-size-slider>
+  </div>
+  <div class="right">
+    <button mat-icon-button aria-label="Undo icon" (click)="undo()">
+      <mat-icon>undo</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Redo icon" (click)="redo()">
+      <mat-icon>redo</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Delete icon" (click)="clear()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>

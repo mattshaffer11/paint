@@ -1,0 +1,16 @@
+<app-toolbar
+  [strokeWidth]="strokeWidth"
+  [activeColor]="color"
+  (changeColor)="changeColor($event)"
+  (changeStrokeWidth)="changeStrokeWidth($event)"
+  (undo)="undo()"
+  (redo)="redo()"
+  (clear)="clear()"
+></app-toolbar>
+<app-canvas
+  class="canvas"
+  [elements]="elements"
+  [width]="strokeWidth"
+  [color]="color"
+  (add)="addElement($event)"
+></app-canvas>
