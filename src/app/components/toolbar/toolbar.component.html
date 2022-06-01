@@ -4,6 +4,7 @@
       <app-color-icon [active]="color === activeColor" [color]="color"></app-color-icon>
     </button>
     <app-size-slider
+      class="slider"
       (change)="changeStrokeWidth($event)"
       [value]="strokeWidth">
     </app-size-slider>
