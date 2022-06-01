@@ -24,7 +24,6 @@ import { CanvasComponent, ColorIconComponent, SizeSliderComponent, ToolbarCompon
     MatSliderModule,
     MatToolbarModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
